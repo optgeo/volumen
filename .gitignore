@@ -1,0 +1,4 @@
+a.geojsons
+.rake_tasks~
+tiles.mbtiles*
+
