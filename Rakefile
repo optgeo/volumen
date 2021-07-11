@@ -1,7 +1,7 @@
 require './constants.rb'
 
 desc 'download and produce'
-task :through
+task :through do
   sh [
     "ruby yield.rb | shuf | ",
     "parallel --line-buffer 'curl --output - ",

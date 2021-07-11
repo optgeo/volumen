@@ -51,7 +51,7 @@ const showMap = async (texts) => {
     })
 
     map.on('moveend', () => {
-      if (map.getZoom() < 16) {
+      if (map.getZoom() < 16 && !speechSynthesis.speaking) {
         let u = new SpeechSynthesisUtterance()
 	u.lang = 'ja-JP'
 	u.text = '拡大してください。'

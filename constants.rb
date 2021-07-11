@@ -1,7 +1,8 @@
-ZXY = [11, 1815, 810]
+ZXY = [11, 1818, 806]
 Z = 18
 ROOT_URL = 'https://maps.gsi.go.jp/xyz'
 BASE_URL = 'http://m343:9966'
+#BASE_URL = 'https://optgeo.github.io/volumen-11-1815-810'
 TS = %w{experimental_dem10b experimental_dem5a}
 EXT = 'geojson'
 MAXZOOMS = {

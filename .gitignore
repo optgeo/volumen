@@ -1,4 +1,5 @@
 a.geojsons
 .rake_tasks~
 tiles.mbtiles*
+docs/zxy
 
