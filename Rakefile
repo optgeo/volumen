@@ -8,6 +8,7 @@ task :through do
     "--silent --fail {} | tippecanoe-json-tool | ",
     "URL={} ruby filter.rb' | ",
     "tippecanoe -f -o tiles.mbtiles ",
+    "--detect-shared-borders --coalesce ",
     "--minimum-zoom=#{MINZOOM} ",
     "--maximum-zoom=#{MAXZOOM} ; ",
     "tile-join --force --no-tile-compression ",

@@ -1,18 +1,18 @@
 {
   "version": 8,
   "center": [
-    139.073181,
-    35.068221
+    139.119873,
+    37.779398
   ],
-  "zoom": 16,
+  "zoom": 14,
   "sources": {
     "v": {
       "type": "vector",
       "minzoom": 14,
-      "maxzoom": 16,
+      "maxzoom": 14,
       "attribution": "国土地理院ベクトルタイル提供実験",
       "tiles": [
-        "http://m343:9966/zxy/{z}/{x}/{y}.pbf"
+        "https://optgeo.github.io/volumen-10-907-395/zxy/{z}/{x}/{y}.pbf"
       ]
     },
     "i": {
@@ -54,10 +54,6 @@
       "minzoom": 14,
       "maxzoom": 22,
       "paint": {
-        "fill-extrusion-base": [
-          "get",
-          "a"
-        ],
         "fill-extrusion-height": [
           "+",
           [
@@ -75,20 +71,12 @@
       "type": "fill-extrusion",
       "source": "v",
       "source-layer": "dem5a",
-      "minzoom": 16,
+      "minzoom": 14,
       "maxzoom": 22,
       "paint": {
-        "fill-extrusion-base": [
+        "fill-extrusion-height": [
           "get",
           "a"
-        ],
-        "fill-extrusion-height": [
-          "+",
-          [
-            "get",
-            "a"
-          ],
-          4.99
         ],
         "fill-extrusion-color": "#ffeb3b",
         "fill-extrusion-opacity": 0.7

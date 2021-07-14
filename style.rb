@@ -48,9 +48,6 @@ layers:
     minzoom: #{MINZOOMS['dem10b']}
     maxzoom: 22
     paint: 
-      fill-extrusion-base: 
-        - get
-        - a
       fill-extrusion-height: 
         - "+"
         -
@@ -67,15 +64,9 @@ layers:
     minzoom: #{MINZOOMS['dem5a']}
     maxzoom: 22
     paint:
-      fill-extrusion-base:
+      fill-extrusion-height:
         - get
         - a
-      fill-extrusion-height:
-        - "+"
-        -
-          - get
-          - a
-        - 4.99
       fill-extrusion-color: "#ffeb3b"
       fill-extrusion-opacity: #{COMMON_OPACITY}
 EOS

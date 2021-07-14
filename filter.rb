@@ -4,9 +4,9 @@ require './constants.rb'
 t = ENV['URL'].split('/')[4].split('_')[1]
 half = case t
        when 'dem5a'
-         0.19 # actual value = 0.2
+         0.16 # actual value = 0.2
        when 'dem5b'
-         0.19 # actual value = 0.2
+         0.16 # actual value = 0.2
        when 'dem10b'
          0.4 # actual value = 0.4
        else
@@ -17,7 +17,8 @@ half /= 3600 * 2
 while gets
   f = JSON.parse($_.strip)
   f['properties'] = {
-    :a => (f['properties']['alti'] / 5).to_i * 5
+    #:a => (f['properties']['alti'] / 5).to_i * 5
+    :a => f['properties']['alti'].to_i
   }
   lng = f['geometry']['coordinates'][0]
   lat = f['geometry']['coordinates'][1]
